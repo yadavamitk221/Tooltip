@@ -1,0 +1,65 @@
+.top{
+    height: 30%;
+    width: 85%;
+    margin-top: -100%;
+    margin-left: 0%;
+    padding: 6px 10px 15px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: grey;
+    color: white;
+  }
+  
+  
+  /*styling for the right position hover...*/
+  
+  
+  .right{
+      height: 30%;
+      width: 100%;
+      margin-top:-50%;
+      margin-left: 105%;
+      padding: 6px 10px 15px 10px;
+      border: 1px solid black;
+      border-radius: 10px;
+      font-size: 1rem;
+      background-color:grey;
+      color: antiquewhite;
+      align-self: center;
+  }
+  
+  
+  /*styling for the down position hover...*/
+  
+  
+  .down{
+    height: 30%;
+    width: 85%;
+    margin-top: 5%;
+    margin-left: 0%;
+    padding: 6px 10px 15px 10px;
+    border: 1px solid rgb(89, 76, 76);
+    border-radius: 10px;
+    font-size: 1rem;
+    background-color: grey;
+    color: aliceblue;
+  }
+  
+  
+  /*styling for the left position hover...*/
+  
+  
+  .left{
+    height: 30%;
+    width: 90%;
+    margin-top:-50%;
+    margin-left: -110%;
+    padding: 6px 10px 15px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-size: 1rem;
+    background-color: grey;
+    color: white;
+  }

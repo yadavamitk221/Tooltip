@@ -1,23 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import "./app.css";
+import { useState } from "react";
+import Tooltip from "./Tooltip";
 
 function App() {
+  const [visible, setVisible] = useState(false);
+  const [position, setPosition] = useState("top");
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div className="">
+      <div className="btns">
+        <button className="btnPosition" onClick={() => setPosition("top")}>
+          top
+        </button>
+        <button className="btnPosition" onClick={() => setPosition("right")}>
+          right
+        </button>
+        <button className="btnPosition" onClick={() => setPosition("down")}>
+          bottom
+        </button>
+        <button className="btnPosition" onClick={() => setPosition("left")}>
+          left
+        </button>
+      </div>
+      <div className="mainBody">
+        <div
+          className="tool-container"
+          onMouseEnter={() => setVisible(true)}
+          onMouseLeave={() => setVisible(false)}
         >
-          Learn React
-        </a>
-      </header>
+          <p className="App"> Hover Over me</p>
+          <div className="tooltipComponent">
+            <Tooltip visible={visible} position={position} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
